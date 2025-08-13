@@ -86,7 +86,7 @@ The objective is to answer realistic business questions related to sales, custom
 ## Project Files
 - `northwind_sql_analysis.sql` – All 9 queries with logic summaries
 - `results/` – CSV outputs for each business question
-- `northwind_schema.png` – ERD diagram of the database
+- `northwind_schema.pdf` – ERD diagram of the database
 - `SampleQuery.png` - Sample Query Snippet
 - `SampleResult.png` - Sample Result Snippet
 - `README.md` – This documentation
@@ -112,11 +112,6 @@ The objective is to answer realistic business questions related to sales, custom
 
 ## Author
 This project is part of a SQL portfolio developed to showcase proficiency in data analysis using advanced SQL techniques.
-
----
-
-## License
-This project is for educational and portfolio demonstration purposes only. The dataset is sourced from a public repository and modified for visualization.
 
 ---
 
