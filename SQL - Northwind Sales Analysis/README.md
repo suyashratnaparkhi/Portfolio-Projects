@@ -52,39 +52,11 @@ The objective is to answer realistic business questions related to sales, custom
 
 ## Sample Query Snippet
 
--- =======================================
--- 1. Top 10 Best-Selling Products by Revenue
--- Business Question: Which products have generated the most revenue, and who supplies them?
 
--- Logic:
--- 1. Join OrderDetails -> Products -> Suppliers.
--- 2. Compute revenue as Quantity × Price.
--- 3. Group by product and supplier.
--- 4. Order by revenue descending, select top 10.
--- =======================================
+---
 
-WITH ProductRevenue AS (
-    SELECT 
-        p.ProductName,
-        s.SupplierName,
-        ROUND(SUM(p.Price * od.Quantity), 2) AS TotalRevenue
-    FROM 
-        OrderDetails od
-    JOIN Orders o 
-        ON od.OrderID = o.OrderID
-    JOIN Products p 
-        ON od.ProductID = p.ProductID
-    JOIN Suppliers s 
-        ON p.SupplierID = s.SupplierID
-    GROUP BY 
-        p.ProductName, s.SupplierName
-)
-SELECT TOP 10 
-    ProductName,
-    SupplierName,
-    TotalRevenue
-FROM ProductRevenue
-ORDER BY TotalRevenue DESC;
+## Sample Result Snippet
+
 
 ---
 
@@ -145,5 +117,4 @@ This project is for educational and portfolio demonstration purposes only. The d
 ---
 
 ## Contact
-For questions or collaboration, feel free to connect on LinkedIn:  
-[Suyash Ratnaparkhi](https://linkedin.com/in/suyash-ratnaparkhi-a894a8373)
+For questions or collaboration, feel free to connect on LinkedIn: [Suyash Ratnaparkhi](https://linkedin.com/in/suyash-ratnaparkhi-a894a8373)
