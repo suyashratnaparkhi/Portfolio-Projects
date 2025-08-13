@@ -31,9 +31,9 @@ The objective is to answer realistic business questions related to sales, custom
 - OrderDetails (linked to Products and Orders)
 
 **Entity Relationships:**
-- Suppliers (1) — (*) Products (*) — (1) Categories
-- Customers (1) — (*) Orders (*) — (1) Shippers
-- Employees (1) — (*) Orders (*) — (1) OrderDetails
+- Suppliers (1) — ( * ) Products ( * ) — (1) Categories
+- Customers (1) — ( * ) Orders ( * ) — (1) Shippers
+- Employees (1) — ( * ) Orders ( * ) — (1) OrderDetails
 
 ---
 
@@ -52,11 +52,13 @@ The objective is to answer realistic business questions related to sales, custom
 
 ## Sample Query Snippet
 
+![Sample Query Snippet](SampleQuery.png)
 
 ---
 
 ## Sample Result Snippet
 
+![Sample Result Snippet](SampleResult.png)
 
 ---
 
@@ -85,6 +87,8 @@ The objective is to answer realistic business questions related to sales, custom
 - `northwind_sql_analysis.sql` – All 9 queries with logic summaries
 - `results/` – CSV outputs for each business question
 - `northwind_schema.png` – ERD diagram of the database
+- `SampleQuery.png` - Sample Query Snippet
+- `SampleResult.png` - Sample Result Snippet
 - `README.md` – This documentation
 
 ---
